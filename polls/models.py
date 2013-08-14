@@ -1,8 +1,9 @@
 import datetime
+
 from django.utils import timezone
 from django.db import models
 
-# Create your models here.
+
 class Poll(models.Model):
     question = models.CharField(max_length=200)  # var name 'question' will be the column name
     pub_date = models.DateTimeField('date published')  # use date published as human readable name instead of pub_date
